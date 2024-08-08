@@ -8,8 +8,14 @@
 	<!-- <style>body{opacity: 0;}</style> -->
 	<link rel="stylesheet" href="css/style.min.css?_v=20240808123222">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css?_v=20240808123222" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@23.8.1/build/css/intlTelInput.css?_v=20240808123222">
+	<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css?_v=20240808123222"
+	/>
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/intl-tel-input@23.8.1/build/css/intlTelInput.css?_v=20240808123222"
+	>
 
 	<!-- Script -->
 	<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@23.8.1/build/js/intlTelInput.min.js?_v=20240808123222"></script>
@@ -20,357 +26,424 @@
 </head>
 
 <body>
-	<div class="wrapper">
-		<header class="header">
-			<div class="header__container">
-				<a href="" class="header__logo logo">
-					<div class="header__image logo__image"></div>
-				</a>
-				<div class="header__menu menu">
-					<nav class="menu__body">
-						<ul class="menu__list">
-							<li class="menu__item">
-								<a href="#" class="menu__link" tabindex="0" aria-label="Getting to the point 'Informazioni'">Informazioni</a>
-							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link" tabindex="1" aria-label="Getting to the point 'CEO'">CEO</a>
-							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link" tabindex="2" aria-label="Getting to the point 'Iniziare a guadagnare subito'">Iniziare a guadagnare subito</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-				<button type="button" class="menu__icon icon-menu" aria-label="Open the menu on your phone" tabindex="3">
-					<span></span>
-				</button>
+<div class="wrapper">
+	<header class="header">
+		<div class="header__container">
+			<a href="#" class="header__logo logo">
+				<div class="header__image logo__image"></div>
+			</a>
+			<div class="header__menu menu">
+				<nav class="menu__body">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a
+								href="#"
+								class="menu__link"
+								aria-label="Getting to the point 'Informazioni'"
+							>Informazioni</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link" aria-label="Getting to the point 'CEO'">CEO</a>
+						</li>
+						<li class="menu__item">
+							<a
+								href="#"
+								class="menu__link"
+								aria-label="Getting to the point 'Iniziare a guadagnare subito'"
+							>Iniziare a guadagnare subito</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
-		</header>
-		<main class="page">
-			<section class="page__hero hero">
-				<div class="hero__container">
-					<div class="hero__body">
-						<div class="hero__background"></div>
-						<p class="hero__main-text">Investire 250 euro per raggiungere 5000 euro in una settimana vi sembra
-							impossibile?<br />Con il Gruppo Generali potete fare ancora di più!
-						</p>
+			<button type="button" class="menu__icon icon-menu" aria-label="Open the menu on your phone">
+				<span></span>
+			</button>
+		</div>
+	</header>
+	<main class="page">
+		<section class="page__hero hero">
+			<div class="hero__container">
+				<div class="hero__body">
+					<div class="hero__background"></div>
+					<p class="hero__main-text">Investire 250 euro per raggiungere 5000 euro in una settimana vi sembra
+						impossibile?<br />Con il Gruppo Generali potete fare ancora di più!
+					</p>
 
-						<div class="hero__form-wrapper">
-							<form action="#" class="hero__form form">
-								<label for="name"></label>
-								<input autocomplete="off" type="text" name="form[]" data-error="Неправильно введене ім'я" data-validate placeholder="il suo nome" class="input form__input" id="name">
+					<div class="hero__form-wrapper">
+						<form action="#" class="hero__form form">
+							<label for="name"></label>
+							<input
+								autocomplete="off"
+								type="text"
+								name="form[]"
+								data-error="Неправильно введене ім'я"
+								data-validate
+								placeholder="il suo nome"
+								class="input form__input"
+								id="name"
+								aria-label="Field for entering a name"
+							>
+							<label for="lastname"></label>
+							<input
+								class="form__input"
+								type="text"
+								name="form[]"
+								data-error="Неправильно введене прізвище"
+								data-validate
+								id="lastname"
+								autocomplete="off"
+								placeholder="il suo cog"
+								aria-label="Field for entering a surname"
+							>
+							<label for="email"></label>
+							<input
+								class="form__input"
+								type="email"
+								name="form[]"
+								id="email"
+								autocomplete="off"
+								placeholder="e-mail"
+								data-validate
+								data-error="È stata inserita un'e-mail errata"
+								data-required="email"
+								aria-label="Field for entering mail"
+							>
+							<label for="phone"></label>
+							<input
+								class="form__input"
+								type="tel"
+								name="phone"
+								autocomplete="off"
+								id="phone"
+								aria-label="Field for entering the phone number"
+							>
+							<button class="form__button button" type="submit" aria-label="Button for pushing the form">
+								registrati
+							</button>
+						</form>
+					</div>
 
-								<label for="lastname"></label><input class="form__input" type="text" name="form[]" data-error="Неправильно введене прізвище" data-validate id="lastname" autocomplete="off" placeholder="il suo cog">
-								<label for="email"></label><input class="form__input" type="email" name="form[]" id="email" autocomplete="off" placeholder="e-mail" data-validate data-error="È stata inserita un'e-mail errata" data-required="email">
-								<label for="phone"></label><input class="form__input" type="tel" name="phone" autocomplete="off" id="phone">
-								<button class="form__button button" type="submit">registrati</button>
-							</form>
-						</div>
+					<div class="hero__figure">
+						<img
+							class="hero__figure--rectangle-modify"
+							src="img/hero/rentagle-skeleton.webp"
+							alt="Rectangle-rotate figure item"
+						>
+						<img class="hero__figure--rectangle" src="img/hero/square-skeleton.webp" alt="Rectangle figure item">
+					</div>
 
-						<div class="hero__figure">
-							<img class="hero__figure--rectangle-modify" src="img/hero/rentagle-skeleton.webp" alt="">
-							<img class="hero__figure--rectangle" src="img/hero/square-skeleton.webp" alt="">
-						</div>
-
-						<div class="hero__second-text">
-							<p>il nostro scopo</p>
-							<p>Siamo qui per promuovere lo sviluppo e la circolazione delle persone, delle imprese e del Paese.</p>
-						</div>
+					<div class="hero__second-text">
+						<p>il nostro scopo</p>
+						<p>Siamo qui per promuovere lo sviluppo e la circolazione delle persone, delle imprese e del Paese.</p>
 					</div>
 				</div>
-			</section>
-			<section class="page__service service">
-				<div class="service__container">
-					<div class="service__content">
-						<h2 class="service__title">Inizia a servire con noi</h2>
+			</div>
+		</section>
+		<section class="page__service service">
+			<div class="service__container">
+				<div class="service__content">
+					<h2 class="service__title">Inizia a servire con noi</h2>
 
-						<div class="service__cards">
-							<section class="service__card card">
-								<img src="img/service/registration.svg" alt="#" class="card__icon">
+					<div class="service__cards">
+						<section class="service__card card">
+							<img src="img/service/registration.svg" alt="Registrazione card-icon" class="card__icon" aria-label="Icon of the registration card">
 
-								<div class="card__content">
-									<h3 class="card__title">Registrazione</h3>
-									<p class="card__text">Compilare tutti i campi del modulo di registrazione sul sito web.</p>
-								</div>
-
-								<button class="card__button button">INIZIARE</button>
-							</section>
-
-							<section class="service__card card">
-								<img src="img/service/consultation.svg" alt="#" class="card__icon">
-
-								<div class="card__content card__content--second">
-									<h3 class="card__title">Consultazione di esperti</h3>
-									<p class="card__text">Dopo la registrazione, rispondere all'invito del Consulente di supporto di Petrol
-										Energia e seguire tutte le sue istruzioni.</p>
-								</div>
-
-								<button class="card__button button">INIZIARE</button>
-							</section>
-
-							<section class="service__card card">
-								<img src="img/service/deposit.svg" alt="#" class="card__icon">
-
-								<div class="card__content">
-									<h3 class="card__title">Deposito</h3>
-									<p class="card__text">Dopo la verifica, è necessario depositare un minimo di 250 euro sul conto
-										dell'azionista.</p>
-								</div>
-
-								<button class="card__button button">INIZIARE</button>
-							</section>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="page__post-info post-info">
-				<div class="post-info__container">
-					<div class="post-info__content">
-						<div class="post-info__top">
-							<div class="post-info__text-block">
-								<div class="post-info__blur-block"></div>
-								<img src="img/post-info/person.webp" alt="#" class="post-info__image">
-								<p class="post-info__text">
-									Philippe Donnet, amministratore delegato di Generali, ha appena festeggiato
-									dieci anni in Italia e in un’intervista a “Repubblica” spiega che bilancio trae dal nostro Paese: “In
-									questi dieci anni il mondo ha dovuto fare i conti con prove molto dure e questo ci ha resi più capaci di
-									gestire l’imprevedibile. L’Italia ha resistito bene. Per quanto mi riguarda, tre anni fa sono diventato
-									cittadino italiano: perché ci tenevo a rimarcare un’adesione forte ai valori e alla cultura di questo
-									Paese”. Un’altra prova per l’economia è stato il repentino rialzo dei tassi: “A mio parere è improprio
-									parlare oggi di tassi alti: quando ero teenager, i mutui viaggiavano a due cifre percentuali. La vera
-									anomalia è stata vivere con tassi a zero per quindici anni. Oggi siamo in una situazione normale. Per
-									quel che riguarda il nostro gruppo, abbiamo un business mix grazie al quale possiamo crescere in
-									qualsiasi ciclo economico”. La crescita dell’Italia è stimata attorno allo 0,7 per cento: “Noi non
-									avremo problemi ma per la crescita si può fare meglio, in Italia e in Europa. Ritengo che in Europa non
-									ci sia abbastanza Europa, ma troppe tasse e troppe norme, che si sovrappongono a quelle nazionali.
-									Questo non aiuta né le famiglie né le imprese: quindi abbassiamo le tasse, riduciamo le norme e
-									liberiamo le energie imprenditoriali”.
-								</p>
+							<div class="card__content">
+								<h3 class="card__title">Registrazione</h3>
+								<p class="card__text">Compilare tutti i campi del modulo di registrazione sul sito web.</p>
 							</div>
-						</div>
 
-						<div class="post-info__bottom">
-							<div class="post-info__stats stats">
-								<h2 class="stats__title">Potencijal dobiti</h2>
+							<button class="card__button button" aria-label="Button to go to the page">INIZIARE</button>
+						</section>
 
-								<div class="stats__panel">
-									<div class="stats__dashboard">
-										<input type="text" class="stats__month-range" name="my_range" value="" />
-										<input type="text" class="stats__currency-range" name="my_range" value="" />
+						<section class="service__card card">
+							<img src="img/service/consultation.svg" alt="Consultazione di esperti card-icon" class="card__icon" aria-label="Icon of the consultation card">
 
-										<button class="stats__button">MOGUĆA DOBIT:<span>€ 8600</span></button>
-									</div>
-
-									<div class="stats__numbers">
-										<div class="stats__text-content">
-											<p class="stats__text-title">UKUPNA DOBIT KORISNIKA:</p>
-											<p class="stats__text-currency">€ 128 567 000</p>
-										</div>
-
-										<div class="stats__text-content">
-											<p class="stats__text-title">AKTIVNI KORISNICI:</p>
-											<p class="stats__text-currency">77 335</p>
-										</div>
-									</div>
-								</div>
+							<div class="card__content card__content--second">
+								<h3 class="card__title">Consultazione di esperti</h3>
+								<p class="card__text">Dopo la registrazione, rispondere all'invito del Consulente di supporto di Petrol
+									Energia e seguire tutte le sue istruzioni.</p>
 							</div>
-						</div>
+
+							<button class="card__button button" aria-label="Button to go to the page">INIZIARE</button>
+						</section>
+
+						<section class="service__card card">
+							<img src="img/service/deposit.svg" alt="Deposito card-icon" class="card__icon" aria-label="Icon of the deposit card">
+
+							<div class="card__content">
+								<h3 class="card__title">Deposito</h3>
+								<p class="card__text">Dopo la verifica, è necessario depositare un minimo di 250 euro sul conto
+									dell'azionista.</p>
+							</div>
+
+							<button class="card__button button" aria-label="Button to go to the page">INIZIARE</button>
+						</section>
 					</div>
 				</div>
-			</section>
-			<section class="page__feedback feedback">
-				<div class="feedback__container">
-					<div class="feedback__content">
-						<div class="feedback__slider swiper">
-							<div class="feedback__wrapper swiper-wrapper">
-								<div class="feedback-card swiper-slide">
-									<div class="feedback-card__top">
-										<div class="feedback-card__image-box">
-											<img src="img/feedback/image-1.webp" alt="Image-1 Avatar" class="feedback-card__image">
-										</div>
-										<div class="feedback-card__content">
-											<h3 class="feedback-card__title">Jeff Bezos:</h3>
-											<p class="feedback-card__text">Technologieunternehmer, Investor und Philanthrop</p>
-											<a href="#" class="feedback-card__link"></a>
-										</div>
-									</div>
-									<div class="feedback-card__bottom">
-										<p class="feedback-card__comment">
-											Dem Quantencomputing gehört die Zukunft. Ich übertreibe nicht, wenn
-											ich sage, es wird<br />alles verändern wird. Das Quantencomputing steht noch ganz am Anfang; nicht viele<br />
-											Menschen wissen davon, was bedeutet, dass nur sehr wenige es nutzen. Die wenigen, die<br />
-											es nutzen, treffen unglaublich kluge (und profitable) Entscheidungen.
-										</p>
-									</div>
+			</div>
+		</section>
+		<section class="page__post-info post-info">
+			<div class="post-info__container">
+				<div class="post-info__content">
+					<div class="post-info__top">
+						<div class="post-info__text-block">
+							<div class="post-info__blur-block"></div>
+							<img src="img/post-info/person.webp" alt="Philippe Donnet avatar" class="post-info__image" aria-label="Philippe Donné Photography">
+							<p class="post-info__text">
+								Philippe Donnet, amministratore delegato di Generali, ha appena festeggiato
+								dieci anni in Italia e in un’intervista a “Repubblica” spiega che bilancio trae dal nostro Paese: “In
+								questi dieci anni il mondo ha dovuto fare i conti con prove molto dure e questo ci ha resi più capaci di
+								gestire l’imprevedibile. L’Italia ha resistito bene. Per quanto mi riguarda, tre anni fa sono diventato
+								cittadino italiano: perché ci tenevo a rimarcare un’adesione forte ai valori e alla cultura di questo
+								Paese”. Un’altra prova per l’economia è stato il repentino rialzo dei tassi: “A mio parere è improprio
+								parlare oggi di tassi alti: quando ero teenager, i mutui viaggiavano a due cifre percentuali. La vera
+								anomalia è stata vivere con tassi a zero per quindici anni. Oggi siamo in una situazione normale. Per
+								quel che riguarda il nostro gruppo, abbiamo un business mix grazie al quale possiamo crescere in
+								qualsiasi ciclo economico”. La crescita dell’Italia è stimata attorno allo 0,7 per cento: “Noi non
+								avremo problemi ma per la crescita si può fare meglio, in Italia e in Europa. Ritengo che in Europa non
+								ci sia abbastanza Europa, ma troppe tasse e troppe norme, che si sovrappongono a quelle nazionali.
+								Questo non aiuta né le famiglie né le imprese: quindi abbassiamo le tasse, riduciamo le norme e
+								liberiamo le energie imprenditoriali”.
+							</p>
+						</div>
+					</div>
+
+					<div class="post-info__bottom">
+						<div class="post-info__stats stats">
+							<h2 class="stats__title">Potencijal dobiti</h2>
+
+							<div class="stats__panel">
+								<div class="stats__dashboard">
+									<input type="text" class="stats__month-range" name="my_range" value=""/>
+									<input type="text" class="stats__currency-range" name="my_range" value=""/>
+
+									<button class="stats__button">MOGUĆA DOBIT:<span>€ 8600</span></button>
 								</div>
-								<div class="feedback-card swiper-slide">
-									<div class="feedback-card__top">
-										<div class="feedback-card__image-box">
-											<img src="img/feedback/image-2.webp" alt="" class="feedback-card__image">
-										</div>
-										<div class="feedback-card__content">
-											<h3 class="feedback-card__title">Bill Gates:</h3>
-											<p class="feedback-card__text">'Wirtschaftsmagnat, Investor, Autor, Philanthrop und<br /> Menschenfreund</p>
-											<a href="#" class="feedback-card__link"></a>
-										</div>
+
+								<div class="stats__numbers">
+									<div class="stats__text-content">
+										<p class="stats__text-title">UKUPNA DOBIT KORISNIKA:</p>
+										<p class="stats__text-currency">€ 128 567 000</p>
 									</div>
-									<div class="feedback-card__bottom">
-										<p class="feedback-card__comment">
-											Ich weiß mit Sicherheit, dass Elon 3 Milliarden Dollar von seinem eigenen Geld ausgegeben<br />
-											hat, um dieses Programm zu finanzieren. Hut ab vor ihm - das sind 3 Milliarden Dollar von<br />
-											seinem eigenen Geld, um eine bessere Zukunft für alle zu finanzieren und um anderen zu<br />
-											helfen Gewinne zu machen, die ihm dabei helfen werden! Das ist eine Win-Win-Situation,<br />
-											und ich bin sehr gespannt zu sehen, wohin das führen wird.
-										</p>
-									</div>
-								</div>
-								<div class="feedback-card swiper-slide">
-									<div class="feedback-card__top">
-										<div class="feedback-card__image-box">
-											<img src="img/feedback/image-3.webp" alt="" class="feedback-card__image">
-										</div>
-										<div class="feedback-card__content">
-											<h3 class="feedback-card__title">Bill Gates:</h3>
-											<p class="feedback-card__text">'Wirtschaftsmagnat, Investor, Autor, Philanthrop und<br /> Menschenfreund</p>
-											<a href="#" class="feedback-card__link"></a>
-										</div>
-									</div>
-									<div class="feedback-card__bottom">
-										<p class="feedback-card__comment">
-											Ich weiß mit Sicherheit, dass Elon 3 Milliarden Dollar von seinem eigenen Geld ausgegeben<br />
-											hat, um dieses Programm zu finanzieren. Hut ab vor ihm - das sind 3 Milliarden Dollar von<br />
-											seinem eigenen Geld, um eine bessere Zukunft für alle zu finanzieren und um anderen zu<br />
-											helfen Gewinne zu machen, die ihm dabei helfen werden! Das ist eine Win-Win-Situation,<br />
-											und ich bin sehr gespannt zu sehen, wohin das führen wird.
-										</p>
-									</div>
-								</div>
-								<div class="feedback-card swiper-slide">
-									<div class="feedback-card__top">
-										<div class="feedback-card__image-box">
-											<img src="img/feedback/image-4.webp" alt="" class="feedback-card__image">
-										</div>
-										<div class="feedback-card__content">
-											<h3 class="feedback-card__title">Bill Gates:</h3>
-											<p class="feedback-card__text">'Wirtschaftsmagnat, Investor, Autor, Philanthrop und<br /> Menschenfreund</p>
-											<a href="#" class="feedback-card__link"></a>
-										</div>
-									</div>
-									<div class="feedback-card__bottom">
-										<p class="feedback-card__comment">
-											Ich weiß mit Sicherheit, dass Elon 3 Milliarden Dollar von seinem eigenen Geld ausgegeben<br />
-											hat, um dieses Programm zu finanzieren. Hut ab vor ihm - das sind 3 Milliarden Dollar von<br />
-											seinem eigenen Geld, um eine bessere Zukunft für alle zu finanzieren und um anderen zu<br />
-											helfen Gewinne zu machen, die ihm dabei helfen werden! Das ist eine Win-Win-Situation,<br />
-											und ich bin sehr gespannt zu sehen, wohin das führen wird.
-										</p>
-									</div>
-								</div>
-								<div class="feedback-card swiper-slide">
-									<div class="feedback-card__top">
-										<div class="feedback-card__image-box">
-											<img src="img/feedback/image-5.webp" alt="" class="feedback-card__image">
-										</div>
-										<div class="feedback-card__content">
-											<h3 class="feedback-card__title">Bill Gates:</h3>
-											<p class="feedback-card__text">'Wirtschaftsmagnat, Investor, Autor, Philanthrop und<br /> Menschenfreund</p>
-											<a href="#" class="feedback-card__link"></a>
-										</div>
-									</div>
-									<div class="feedback-card__bottom">
-										<p class="feedback-card__comment">
-											Ich weiß mit Sicherheit, dass Elon 3 Milliarden Dollar von seinem eigenen Geld ausgegeben<br />
-											hat, um dieses Programm zu finanzieren. Hut ab vor ihm - das sind 3 Milliarden Dollar von<br />
-											seinem eigenen Geld, um eine bessere Zukunft für alle zu finanzieren und um anderen zu<br />
-											helfen Gewinne zu machen, die ihm dabei helfen werden! Das ist eine Win-Win-Situation,<br />
-											und ich bin sehr gespannt zu sehen, wohin das führen wird.
-										</p>
+
+									<div class="stats__text-content">
+										<p class="stats__text-title">AKTIVNI KORISNICI:</p>
+										<p class="stats__text-currency">77 335</p>
 									</div>
 								</div>
 							</div>
-							<div class="swiper-pagination"></div>
-							<button type="button" class="swiper-button-prev"></button>
-							<button type="button" class="swiper-button-next"></button>
 						</div>
 					</div>
 				</div>
-			</section>
-			<section class="page__partners partners">
-				<div class="partners__container">
-					<div class="partners__content">
-						<h2 class="partners__title">Gli azionisti dell'azienda</h2>
-
-						<ul class="partners__list">
-							<li class="partners__item">
-								<a href="https://www.mediobanca.com" target="_blank" class="partners__link">
-									<img src="img/partners/mediobanca.webp" alt="" class="partners__image" />
-								</a>
-							</li>
-							<li class="partners__item">
-								<a href="http://www.unicredit.com.ua" target="_blank" class="partners__link">
-									<img src="img/partners/unicredit.webp" alt="UnitCredit Bank Logo" class="partners__image" />
-								</a>
-							</li>
-							<li class="partners__item">
-								<a href="https://www.bancaditalia.it" target="_blank" class="partners__link">
-									<img src="img/partners/banca_d-italia.webp" alt="Banca Ditalia Logo" class="partners__image" />
-								</a>
-							</li>
-							<li class="partners__item">
-								<a href="#" class="partners__link">
-									<img src="img/partners/b-d_holdings.webp" alt="" class="partners__image" />
-								</a>
-							</li>
-							<li class="partners__item">
-								<a href="https://bndholdings.com" target="_blank" class="partners__link">
-									<img src="img/partners/garbo_gassaro.webp" alt="BndHoldings Logo" class="partners__image" />
-								</a>
-							</li>
-							<li class="partners__item">
-								<a href="https://www.generali.com" target="_blank" class="partners__link">
-									<img src="img/partners/generali.webp" alt="Generali Logo" class="partners__image" />
-								</a>
-							</li>
-						</ul>
+			</div>
+		</section>
+		<section class="page__feedback feedback">
+			<div class="feedback__container">
+				<div class="feedback__content">
+					<div class="feedback__slider swiper">
+						<div class="feedback__wrapper swiper-wrapper">
+							<div class="feedback-card swiper-slide">
+								<div class="feedback-card__top">
+									<div class="feedback-card__image-box">
+										<img src="img/feedback/image-1.webp" alt="First person avatar comment" class="feedback-card__image">
+									</div>
+									<div class="feedback-card__content">
+										<h3 class="feedback-card__title">Jeff Bezos:</h3>
+										<p class="feedback-card__text">Technologieunternehmer, Investor und Philanthrop</p>
+										<a href="#" class="feedback-card__link"></a>
+									</div>
+								</div>
+								<div class="feedback-card__bottom">
+									<p class="feedback-card__comment">
+										Dem Quantencomputing gehört die Zukunft. Ich übertreibe nicht, wenn
+										ich sage, es wird<br />alles verändern wird. Das Quantencomputing steht noch ganz am Anfang; nicht
+										viele<br />
+										Menschen wissen davon, was bedeutet, dass nur sehr wenige es nutzen. Die wenigen, die<br />
+										es nutzen, treffen unglaublich kluge (und profitable) Entscheidungen.
+									</p>
+								</div>
+							</div>
+							<div class="feedback-card swiper-slide">
+								<div class="feedback-card__top">
+									<div class="feedback-card__image-box">
+										<img
+											src="img/feedback/image-2.webp"
+											alt="Second person avatar comment"
+											class="feedback-card__image"
+										>
+									</div>
+									<div class="feedback-card__content">
+										<h3 class="feedback-card__title">Bill Gates:</h3>
+										<p class="feedback-card__text">'Wirtschaftsmagnat, Investor, Autor, Philanthrop und<br />
+											Menschenfreund</p>
+										<a href="#" class="feedback-card__link"></a>
+									</div>
+								</div>
+								<div class="feedback-card__bottom">
+									<p class="feedback-card__comment">
+										Ich weiß mit Sicherheit, dass Elon 3 Milliarden Dollar von seinem eigenen Geld ausgegeben<br />
+										hat, um dieses Programm zu finanzieren. Hut ab vor ihm - das sind 3 Milliarden Dollar von<br />
+										seinem eigenen Geld, um eine bessere Zukunft für alle zu finanzieren und um anderen zu<br />
+										helfen Gewinne zu machen, die ihm dabei helfen werden! Das ist eine Win-Win-Situation,<br />
+										und ich bin sehr gespannt zu sehen, wohin das führen wird.
+									</p>
+								</div>
+							</div>
+							<div class="feedback-card swiper-slide">
+								<div class="feedback-card__top">
+									<div class="feedback-card__image-box">
+										<img src="img/feedback/image-3.webp" alt="Third person avatar comment" class="feedback-card__image">
+									</div>
+									<div class="feedback-card__content">
+										<h3 class="feedback-card__title">Bill Gates:</h3>
+										<p class="feedback-card__text">'Wirtschaftsmagnat, Investor, Autor, Philanthrop und<br />
+											Menschenfreund</p>
+										<a href="#" class="feedback-card__link"></a>
+									</div>
+								</div>
+								<div class="feedback-card__bottom">
+									<p class="feedback-card__comment">
+										Ich weiß mit Sicherheit, dass Elon 3 Milliarden Dollar von seinem eigenen Geld ausgegeben<br />
+										hat, um dieses Programm zu finanzieren. Hut ab vor ihm - das sind 3 Milliarden Dollar von<br />
+										seinem eigenen Geld, um eine bessere Zukunft für alle zu finanzieren und um anderen zu<br />
+										helfen Gewinne zu machen, die ihm dabei helfen werden! Das ist eine Win-Win-Situation,<br />
+										und ich bin sehr gespannt zu sehen, wohin das führen wird.
+									</p>
+								</div>
+							</div>
+							<div class="feedback-card swiper-slide">
+								<div class="feedback-card__top">
+									<div class="feedback-card__image-box">
+										<img
+											src="img/feedback/image-4.webp"
+											alt="Fourth avatar people comment"
+											class="feedback-card__image"
+										>
+									</div>
+									<div class="feedback-card__content">
+										<h3 class="feedback-card__title">Bill Gates:</h3>
+										<p class="feedback-card__text">'Wirtschaftsmagnat, Investor, Autor, Philanthrop und<br />
+											Menschenfreund</p>
+										<a href="#" class="feedback-card__link"></a>
+									</div>
+								</div>
+								<div class="feedback-card__bottom">
+									<p class="feedback-card__comment">
+										Ich weiß mit Sicherheit, dass Elon 3 Milliarden Dollar von seinem eigenen Geld ausgegeben<br />
+										hat, um dieses Programm zu finanzieren. Hut ab vor ihm - das sind 3 Milliarden Dollar von<br />
+										seinem eigenen Geld, um eine bessere Zukunft für alle zu finanzieren und um anderen zu<br />
+										helfen Gewinne zu machen, die ihm dabei helfen werden! Das ist eine Win-Win-Situation,<br />
+										und ich bin sehr gespannt zu sehen, wohin das führen wird.
+									</p>
+								</div>
+							</div>
+							<div class="feedback-card swiper-slide">
+								<div class="feedback-card__top">
+									<div class="feedback-card__image-box">
+										<img src="img/feedback/image-5.webp" alt="Fifth avatar people comment" class="feedback-card__image">
+									</div>
+									<div class="feedback-card__content">
+										<h3 class="feedback-card__title">Bill Gates:</h3>
+										<p class="feedback-card__text">'Wirtschaftsmagnat, Investor, Autor, Philanthrop und<br />
+											Menschenfreund</p>
+										<a href="#" class="feedback-card__link"></a>
+									</div>
+								</div>
+								<div class="feedback-card__bottom">
+									<p class="feedback-card__comment">
+										Ich weiß mit Sicherheit, dass Elon 3 Milliarden Dollar von seinem eigenen Geld ausgegeben<br />
+										hat, um dieses Programm zu finanzieren. Hut ab vor ihm - das sind 3 Milliarden Dollar von<br />
+										seinem eigenen Geld, um eine bessere Zukunft für alle zu finanzieren und um anderen zu<br />
+										helfen Gewinne zu machen, die ihm dabei helfen werden! Das ist eine Win-Win-Situation,<br />
+										und ich bin sehr gespannt zu sehen, wohin das führen wird.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+						<button type="button" class="swiper-button-prev"></button>
+						<button type="button" class="swiper-button-next"></button>
 					</div>
 				</div>
-			</section>
-		</main>
-		<footer class="footer">
-			<div class="footer__container">
-				<div class="footer__content">
-					<a href="" class="footer__logo logo">
-						<div class="footer__image logo__image"></div>
-					</a>
+			</div>
+		</section>
+		<section class="page__partners partners">
+			<div class="partners__container">
+				<div class="partners__content">
+					<h2 class="partners__title">Gli azionisti dell'azienda</h2>
 
-					<ul class="footer__list">
-						<li class="footer__item">
-							<a href="#" class="footer__link">Mappa del sito</a>
+					<ul class="partners__list">
+						<li class="partners__item">
+							<a href="https://www.mediobanca.com" target="_blank" class="partners__link">
+								<img src="img/partners/mediobanca.webp" alt="MedioBanca logo" class="partners__image" />
+							</a>
 						</li>
-						<li class="footer__item">
-							<a href="#" class="footer__link">Termini di utilizzo</a>
+						<li class="partners__item">
+							<a href="http://www.unicredit.com.ua" target="_blank" class="partners__link">
+								<img src="img/partners/unicredit.webp" alt="UnitCredit Bank Logo" class="partners__image" />
+							</a>
 						</li>
-						<li class="footer__item">
-							<a href="#" class="footer__link">Avviso di accessibilità</a>
+						<li class="partners__item">
+							<a href="https://www.bancaditalia.it" target="_blank" class="partners__link">
+								<img src="img/partners/banca_d-italia.webp" alt="Banca Ditalia Logo" class="partners__image" />
+							</a>
 						</li>
-						<li class="footer__item">
-							<a href="#" class="footer__link">Gestione dei Cookie</a>
+						<li class="partners__item">
+							<a href="#" class="partners__link">
+								<img src="img/partners/b-d_holdings.webp" alt="BandD Holdings Logo" class="partners__image" />
+							</a>
 						</li>
-						<li class="footer__item">
-							<a href="#" class="footer__link">Politica sulla protezione dei dati e informativa sulla privacy</a>
+						<li class="partners__item">
+							<a href="https://bndholdings.com" target="_blank" class="partners__link">
+								<img src="img/partners/garbo_gassaro.webp" alt="Garbo Gassaro Logo" class="partners__image" />
+							</a>
 						</li>
-						<li class="footer__item">
-							<a href="#" class="footer__link">Avviso di frode Web e phishing</a>
-						</li>
-						<li class="footer__item">
-							<a href="#" class="footer__link">Politica sui reclami – Australia</a>
+						<li class="partners__item">
+							<a href="https://www.generali.com" target="_blank" class="partners__link">
+								<img src="img/partners/generali.webp" alt="Generali Logo" class="partners__image" />
+							</a>
 						</li>
 					</ul>
 				</div>
 			</div>
-		</footer>
-	</div>
-	<script src="js/app.min.js?_v=20240808123222"></script>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__content">
+				<a href="" class="footer__logo logo">
+					<div class="footer__image logo__image"></div>
+				</a>
+
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a href="#" class="footer__link">Mappa del sito</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">Termini di utilizzo</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">Avviso di accessibilità</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">Gestione dei Cookie</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">Politica sulla protezione dei dati e informativa sulla privacy</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">Avviso di frode Web e phishing</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">Politica sui reclami – Australia</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</div>
+<script src="js/app.min.js?_v=20240808123222"></script>
 </body>
 
 </html>
