@@ -1662,6 +1662,9 @@ button.swiper-pagination-bullet {
   .feedback {
     margin-bottom: 1.875rem
   }
+  .feedback__container {
+    padding-inline: .75rem
+  }
   .feedback__content {
     padding-top: .75rem;
     padding-bottom: 0
@@ -1733,7 +1736,7 @@ button.swiper-pagination-bullet {
     font-size: 2.625rem
   }
   .feedback-card {
-    padding: 1.5rem 1.5rem 1.125rem 2.25rem
+    padding: 1.5rem 1.5rem 1.25rem 2.25rem
   }
   .feedback-card__top {
     flex: 1 1 auto;
