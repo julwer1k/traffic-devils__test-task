@@ -1332,12 +1332,24 @@
             }
         };
         function menuInit() {
-            if (document.querySelector(".icon-menu")) document.addEventListener("click", (function(e) {
-                if (bodyLockStatus && e.target.closest(".icon-menu")) {
-                    bodyLockToggle();
-                    document.documentElement.classList.toggle("menu-open");
-                }
-            }));
+            if (document.querySelector(".icon-menu")) {
+                const html = document.getElementsByTagName("html")[0];
+                const links = document.querySelectorAll(".menu__link");
+                links.forEach((link => {
+                    link.addEventListener("click", (function(e) {
+                        if (html.classList.contains("menu-open")) if (bodyLockStatus && e.target.closest(".menu__link")) {
+                            bodyLockToggle();
+                            document.documentElement.classList.toggle("menu-open");
+                        }
+                    }));
+                }));
+                document.addEventListener("click", (function(e) {
+                    if (bodyLockStatus && e.target.closest(".icon-menu")) {
+                        bodyLockToggle();
+                        document.documentElement.classList.toggle("menu-open");
+                    }
+                }));
+            }
         }
         function formFieldsInit(options = {
             viewPass: false,
@@ -4591,7 +4603,7 @@
                 observer: true,
                 observeParents: true,
                 slidesPerView: 1,
-                spaceBetween: 0,
+                spaceBetween: 20,
                 speed: 800,
                 navigation: {
                     prevEl: ".swiper-button-prev",
@@ -4613,33 +4625,6 @@
             }
         }), 0);
         __webpack_require__(436);
-        const page = document.querySelector(".page");
-        const hero = document.querySelector(".hero");
-        const script_button = document.querySelector(".icon-menu");
-        let timeoutId;
-        function applyStyles() {
-            hero.style.position = "relative";
-            hero.style.zIndex = "-1";
-        }
-        function removeStylesWithDelay() {
-            clearTimeout(timeoutId);
-            timeoutId = setTimeout((() => {
-                hero.style.position = "";
-                hero.style.zIndex = "";
-            }), 2e3);
-        }
-        function checkMenuOpen() {
-            if (page.classList.contains("menu-open")) applyStyles(); else removeStylesWithDelay();
-        }
-        script_button.addEventListener("click", (() => {
-            page.classList.toggle("menu-open");
-        }));
-        checkMenuOpen();
-        const observer = new MutationObserver(checkMenuOpen);
-        observer.observe(page, {
-            attributes: true,
-            attributeFilter: [ "class" ]
-        });
         const monthsRange = $(".stats__month-range");
         const currencyRange = $(".stats__currency-range");
         monthsRange.ionRangeSlider({
@@ -4683,6 +4668,32 @@
             strictMode: true,
             useFullscreenPopup: false
         });
+        const onClickButton = () => {
+            alert("This feature is still under development");
+        };
+        const buttons = document.querySelectorAll(".card__button");
+        buttons.forEach((button => {
+            button.addEventListener("click", (e => onClickButton(e)));
+            setTimeout((() => button.removeEventListener("click", onClickButton)), 300);
+        }));
+        const formButton = document.querySelector(".form__button");
+        const formInputs = document.querySelectorAll(".form__input");
+        formButton.addEventListener("click", (e => {
+            e.preventDefault();
+            let isError = false;
+            formInputs.forEach((input => {
+                if (input.classList.contains("_form-error")) isError = true;
+            }));
+            if (!isError) {
+                onClickButton();
+                resetForm();
+            }
+        }));
+        const resetForm = () => {
+            formInputs.forEach((input => {
+                input.value = "";
+            }));
+        };
         window["FLS"] = true;
         menuInit();
         formFieldsInit({
