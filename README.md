@@ -1,28 +1,27 @@
-# Generali Project
+#Generali Project
 
-**Короткий опис**: Це адаптивна односторінкова веб-сторінка для італійського банку Generali.
+**Short description: This is a responsive one-page web page for the Italian bank Generali.
 
-### Демо
-[Переглянути демо](https://julwer1k.github.io/traffic-devils__test-task/)
+### Demo
+[View demo](https://julwer1k.github.io/traffic-devils__test-task/)
 
-### Дизайн
-[Переглянути дизайн](https://www.figma.com/design/M56AjToDTgoYn36M913oej)
+### Design
+[View design](https://www.figma.com/design/M56AjToDTgoYn36M913oej)
 
 <hr />
 
-## Технології
+### Technology
 - **HTML**
 - **SCSS**
 - **CSS**
 - **JavaScript**
-- **BEM**
+- BEM**
 - **GULP**
 
-## Використання бібліотек
+## Using libraries
 - **Swiper**
 - **ionRangeSlider**
 - **intl-tel-input**
 
-## Опис можливостей
-Проект включає стилізацію адаптивного односторінкового сайту відповідно до наданого дизайну. Додано невеликі анімації для кнопок, забезпечено використання `aria-label` для покращення доступності. Сайт оптимізований для різних пристроїв і має адаптивну верстку, що змінюється відповідно до розмірів екрану.
-
+## Description of features
+The project includes the styling of an adaptive one-page website according to the provided design. Small animations for buttons are added, `aria-label` is used to improve accessibility. The site is optimized for different devices and has an adaptive layout that changes according to the screen size.
