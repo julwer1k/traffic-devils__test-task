@@ -1,4 +1,4 @@
-#Generali Project
+# Generali Project
 
 **Short description:** This is a responsive one-page web page for the Italian bank Generali.
 
