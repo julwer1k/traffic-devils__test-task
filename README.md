@@ -1,6 +1,6 @@
 #Generali Project
 
-**Short description: This is a responsive one-page web page for the Italian bank Generali.
+**Short description:** This is a responsive one-page web page for the Italian bank Generali.
 
 ### Demo
 [View demo](https://julwer1k.github.io/traffic-devils__test-task/)
@@ -15,7 +15,7 @@
 - **SCSS**
 - **CSS**
 - **JavaScript**
-- BEM**
+- **BEM**
 - **GULP**
 
 ## Using libraries
